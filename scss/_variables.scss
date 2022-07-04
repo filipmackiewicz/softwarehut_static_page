@@ -1,0 +1,17 @@
+//Colors
+$color-red: #E92F03;
+$color-gray: #323232;
+$color-gray-lighter: #838383;
+$color-white-darker: #F2F2F2;
+$color-white: #fff;
+
+
+//breakpoints
+$breakpoints: (smartphone: (min-width: 460px),
+    smartphone-large: (min-width: 640px),
+    tablet: (min-width: 800px),
+    tablet-large: (min-width: 1024px),
+    desktop-small: (min-width: 1280px),
+    desktop-medium: (min-width: 1600px),
+    desktop-large: (min-width: 1900px),
+);
