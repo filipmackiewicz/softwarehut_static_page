@@ -1,0 +1,10 @@
+.description {
+    position: absolute;
+    left: 35rem;
+
+    &__text {
+        font-family: $font-family-montserrat;
+        font-size: 1.4rem;
+        color: $color-gray;
+    }
+}

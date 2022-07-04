@@ -4,6 +4,8 @@ $color-gray: #323232;
 $color-gray-lighter: #838383;
 $color-white-darker: #F2F2F2;
 $color-white: #fff;
+$color-black: #000;
+$color-yellow: #FFF300;
 
 
 //breakpoints
@@ -15,3 +17,13 @@ $breakpoints: (smartphone: (min-width: 460px),
     desktop-medium: (min-width: 1600px),
     desktop-large: (min-width: 1900px),
 );
+
+
+//Fonts 
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-thin: 100;
+$font-semi-thin: 300;
+$font-regular: 400;
+$font-bold: 600;
+$font-extra-bold: 800;

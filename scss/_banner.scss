@@ -1,0 +1,22 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 15rem 0rem;
+
+    &__title {
+        font-family: $font-family-montserrat;
+        font-weight: $font-bold;
+        font-size: 5rem;
+    }
+
+    &__subtitle {
+        background-color: $color-yellow;
+        padding: 2rem;
+        font-size: 3rem;
+
+        &>span {
+            padding-left: 1.2rem;
+            font-size: 3rem;
+        }
+    }
+}
