@@ -1,4 +1,8 @@
 .navigation {
     display: flex;
     justify-content: space-between;
+
+    // @include media(tablet) {
+    //     display: none;
+    // }
 }

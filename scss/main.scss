@@ -1,9 +1,25 @@
+//base
 @import 'mixins';
 @import 'variables';
 @import 'reset';
 @import 'fonts';
+
+
+
+//components
+@import 'page-container';
 @import 'header';
 @import 'navigation';
 @import 'menu';
 @import 'banner';
 @import 'description';
+@import 'about-company';
+@import 'container';
+@import 'employees';
+@import 'establishment';
+@import 'industry';
+@import 'services';
+@import 'providers';
+@import 'about-ceo';
+@import 'ceo-image';
+@import 'ceo-description';

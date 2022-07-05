@@ -1,0 +1,31 @@
+.ceo-description {
+    grid-area: 1 / 6 / 2 / 12;
+    position: relative;
+
+    &__text {
+        font-family: $font-family-roboto;
+        font-style: italic;
+        font-size: 2rem;
+        color: $color-gray;
+        margin-bottom: 5rem;
+    }
+
+    &__signature {
+        color: $color-gray;
+        font-size: 1.4rem;
+        font-family: $font-family-roboto;
+        & > span {
+            font-weight: $font-bold;
+        }
+    }
+
+    &__sign {
+        font-family: $font-family-roboto;
+        font-size: 18rem;
+        color: $color-red;
+        position: absolute;
+        left: 60%;
+        bottom: 25%;
+        transform: rotate(180deg);
+    }
+}

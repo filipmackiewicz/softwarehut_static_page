@@ -13,11 +13,19 @@ html {
   font-size: 10px;
 }
 
+.page-container {
+  margin: 0 auto;
+  max-width: 1921px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
 .header {
   padding: 3rem;
   background-image: url("/assets/bg.jpg");
   height: 50rem;
   position: relative;
+  z-index: 0;
 }
 
 .navigation {
@@ -93,4 +101,132 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   color: #323232;
+}
+
+.about-company {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin-top: -1rem;
+  z-index: 1;
+  background-color: #F2F2F2;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.employees {
+  grid-area: 1/2/2/4;
+  padding: 4rem 0rem;
+}
+.employees__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.employees__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.establishment {
+  grid-area: 1/5/2/8;
+  padding: 4rem 0rem;
+}
+.establishment__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.establishment__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.industry {
+  grid-area: 1/9/2/12;
+  padding: 4rem 0rem;
+}
+.industry__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.industry__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin: 8rem 0rem;
+}
+
+.providers {
+  grid-area: 1/3/2/11;
+}
+.providers__heading {
+  font-family: "Montserrat", sans-serif;
+  color: #323232;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+.providers__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #323232;
+  margin-bottom: 4rem;
+}
+
+.about-ceo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+
+.ceo-image {
+  grid-area: 1/1/2/4;
+}
+
+.ceo-description {
+  grid-area: 1/6/2/12;
+  position: relative;
+}
+.ceo-description__text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #323232;
+  margin-bottom: 5rem;
+}
+.ceo-description__signature {
+  color: #323232;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.ceo-description__signature > span {
+  font-weight: 600;
+}
+.ceo-description__sign {
+  font-family: "Roboto", sans-serif;
+  font-size: 18rem;
+  color: #E92F03;
+  position: absolute;
+  left: 60%;
+  bottom: 25%;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
