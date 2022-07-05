@@ -559,11 +559,21 @@ html {
 }
 
 .image-box {
-  grid-area: 1/2/2/4;
+  grid-area: 1/2/2/12;
+}
+@media (min-width: 768px) {
+  .image-box {
+    grid-area: 1/2/2/4;
+  }
 }
 
 .fast-contact-first {
-  grid-area: 1/5/2/8;
+  grid-area: 2/2/3/12;
+}
+@media (min-width: 768px) {
+  .fast-contact-first {
+    grid-area: 1/5/2/8;
+  }
 }
 .fast-contact-first__name {
   color: #323232;
@@ -592,7 +602,12 @@ html {
 }
 
 .fast-contact-second {
-  grid-area: 1/9/2/12;
+  grid-area: 3/2/4/12;
+}
+@media (min-width: 768px) {
+  .fast-contact-second {
+    grid-area: 1/9/2/12;
+  }
 }
 .fast-contact-second__text {
   color: #323232;
