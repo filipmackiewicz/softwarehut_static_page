@@ -1,0 +1,27 @@
+.footer-newsletter-form {
+    &__input {
+        padding: 1.5rem 16rem 1.5rem 1rem;
+        background: transparent;
+        border: solid .1rem $color-gray-lighter;
+        color: $color-gray-lighter;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        padding: 1.5rem;
+        margin-left: -.5rem;
+        border: solid .1rem $color-gray-lighter;
+        background: $color-gray-lighter;
+        color: $color-white;
+        cursor: pointer;
+        transition: all .3s ease-in;
+
+        &:hover {
+            background: $color-white;
+            color: $color-gray-lighter;
+        }
+    }
+}

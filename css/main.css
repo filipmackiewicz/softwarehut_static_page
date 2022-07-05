@@ -630,4 +630,78 @@ html {
   color: #323232;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #323232;
+}
+
+.footer-col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer-explore__heading {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #838383;
+  padding-bottom: 1.5rem;
+}
+.footer-explore__text {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #838383;
+  padding-bottom: 1rem;
+}
+
+.footer-soultions {
+  display: flex;
+}
+.footer-soultions > ul {
+  list-style-type: none;
+}
+.footer-soultions > ul:first-child {
+  padding-right: 3rem;
+}
+.footer-soultions > ul > li > a {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.footer-soultions > ul > li > a:hover {
+  color: #838383;
+}
+
+.footer-newsletter__heading {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #838383;
+  padding-bottom: 1.5rem;
+}
+
+.footer-newsletter-form__input {
+  padding: 1.5rem 16rem 1.5rem 1rem;
+  background: transparent;
+  border: solid 0.1rem #838383;
+  color: #838383;
+}
+.footer-newsletter-form__input:focus {
+  outline: none;
+}
+.footer-newsletter-form__btn {
+  padding: 1.5rem;
+  margin-left: -0.5rem;
+  border: solid 0.1rem #838383;
+  background: #838383;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.footer-newsletter-form__btn:hover {
+  background: #fff;
+  color: #838383;
 }/*# sourceMappingURL=main.css.map */
