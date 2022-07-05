@@ -1,4 +1,11 @@
 .footer-explore {
+
+    padding-bottom: 5rem;
+
+    @include media (mobile) {
+        padding-bottom: 0;
+    }
+
     &__heading {
         font-size: 4rem;
         font-family: $font-family-montserrat;

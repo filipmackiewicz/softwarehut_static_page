@@ -1,0 +1,29 @@
+.footer-blog {
+    padding: 5rem 0rem;
+    &__heading {
+        font-size: 4rem;
+        font-family: $font-family-montserrat;
+        color: $color-gray-lighter;
+        padding-bottom: 3rem;
+    }
+
+    &__entries {
+        list-style-type: none;
+
+        &>li {
+            padding: .7rem 0rem;
+        }
+
+        &>li>a {
+            color: $color-white;
+            font-weight: $font-bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all .3s ease-in;
+        }
+
+        &>li>a:hover {
+            color: $color-gray-lighter;
+        }
+    }
+}

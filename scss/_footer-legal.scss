@@ -1,0 +1,14 @@
+.footer-legal {
+    &__heading {
+        font-size: 4rem;
+        font-family: $font-family-montserrat;
+        color: $color-gray-lighter;
+        padding-bottom: 3rem;
+    }
+
+    &__text {
+        color: $color-white;
+        font-weight: $font-bold;
+        font-size: 1.5rem;
+    }
+}

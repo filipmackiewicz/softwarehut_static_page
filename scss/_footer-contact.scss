@@ -1,0 +1,29 @@
+.footer-contact {
+    &__text {
+        font-size: 2rem;
+        font-family: $font-family-montserrat;
+        color: $color-gray-lighter;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+    }
+
+    &>img {
+        padding-bottom: 3rem;
+    }
+
+    &__contact { 
+        &>a {
+            font-size: 2rem;
+            font-family: $font-family-montserrat;
+            color: $color-gray-lighter;
+            padding-bottom: 1rem;
+            text-decoration: none;
+            transition: all .3s ease-in;
+            padding-left: 3rem;
+        }
+
+        &>a:hover {
+            color: $color-white;
+        }
+    }
+}

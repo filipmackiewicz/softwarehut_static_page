@@ -1,0 +1,21 @@
+.footer-socials {
+    padding: 3rem 0rem;
+    &__list {
+        list-style-type: none;
+        display: flex;
+
+        &>li>a {
+            padding: 0 .5rem;
+
+            &>i {
+                color: $color-gray-lighter;
+                font-size: 2em;
+                transition: all .3s ease-in;
+            }
+        }
+
+        &>li>a:hover i {
+            color: $color-red;
+        }
+    }
+}
