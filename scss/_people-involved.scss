@@ -1,0 +1,18 @@
+.people-involved {
+    grid-area: 1 / 9 / 2 / 11;
+
+    &__number {
+        font-family: $font-family-roboto;
+        font-size: 10rem;
+        color: $color-gray;
+        border-bottom: solid 1px $color-gray-lighter;
+        padding-bottom: 2rem;
+        font-weight: $font-thin;
+    }
+
+    &__description {
+        font-family: $font-family-montserrat;
+        font-size: 1.4rem;
+        padding-top: 2rem;
+    }
+}
