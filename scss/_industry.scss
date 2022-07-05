@@ -1,0 +1,16 @@
+.industry {
+    grid-area: 1 / 9 / 2 / 12;
+    padding: 4rem 0rem;
+
+    &__text {
+        font-size: 1.4rem;
+        font-family: $font-family-montserrat;
+        height: 5rem;
+    }
+
+    &__description {
+        font-family: $font-family-montserrat;
+        font-weight: $font-semi-bold;
+        font-size: 3.2rem;
+    }
+}

@@ -1,0 +1,35 @@
+//Colors
+$color-red: #E92F03;
+$color-gray: #323232;
+$color-gray-lighter: #838383;
+$color-white-darker: #F2F2F2;
+$color-white: #fff;
+$color-black: #000;
+$color-yellow: #FFF300;
+
+
+//breakpoints
+$breakpoints: (smartphone-small: (min-width: 320px),
+    smartphone-medium: (min-width: 425px),
+    smartphone: (min-width: 460px),
+    smartphone-large: (min-width: 640px),
+    tablet: (min-width: 800px),
+    tablet-large: (min-width: 1024px),
+    desktop-small: (min-width: 1280px),
+    desktop-medium: (min-width: 1600px),
+    desktop-large: (min-width: 1900px),
+);
+
+
+//Fonts 
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-thin: 100;
+$font-semi-thin: 300;
+$font-regular: 400;
+$font-semi-bold: 500;
+$font-bold: 600;
+$font-extra-bold: 800;
+
+//Widths
+$screen-max-width: 1000px;

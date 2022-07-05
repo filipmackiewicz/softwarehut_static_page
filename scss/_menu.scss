@@ -1,0 +1,45 @@
+.menu {
+    display: flex;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    &__link {
+        margin: 1rem 1rem;
+        font-family: $font-family-montserrat;
+        font-weight: $font-semi-thin;
+        font-size: 1.5rem;
+        color: $color-black;
+        text-decoration: none;
+        transition: all .2s ease-in;
+
+        &:hover {
+            border-bottom: dashed 1px $color-black;
+            padding-bottom: .2rem;
+        }
+
+        &--active {
+            border-bottom: dashed 1px $color-black;
+            padding-bottom: .2rem;
+            font-weight: 800;
+        }
+    }
+
+    &__button {
+        background: $color-red;
+        border: solid 1px $color-red;
+        color: $color-white;
+        padding: .5rem;
+        transition: all .2s ease-in;
+        cursor: pointer;
+
+        &:hover {
+            background: transparent;
+            color: $color-red;
+        }
+    }
+}

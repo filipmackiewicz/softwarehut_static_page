@@ -1,0 +1,12 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+
+    &--bg {
+        background: $color-white-darker;
+        padding: 3rem;
+    }
+}

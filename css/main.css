@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+.page-container {
+  margin: 0 auto;
+  max-width: 1921px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+.wrapper--bg {
+  background: #F2F2F2;
+  padding: 3rem;
+}
+
+.header {
+  padding: 3rem;
+  background-image: url("/assets/bg.jpg");
+  height: 50rem;
+  position: relative;
+  z-index: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+.menu__link {
+  margin: 1rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.menu__link:hover {
+  border-bottom: dashed 1px #000;
+  padding-bottom: 0.2rem;
+}
+.menu__link--active {
+  border-bottom: dashed 1px #000;
+  padding-bottom: 0.2rem;
+  font-weight: 800;
+}
+.menu__button {
+  background: #E92F03;
+  border: solid 1px #E92F03;
+  color: #fff;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.menu__button:hover {
+  background: transparent;
+  color: #E92F03;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 15rem 0rem;
+}
+.banner__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 5rem;
+}
+.banner__subtitle {
+  background-color: #FFF300;
+  padding: 2rem;
+  font-size: 3rem;
+}
+.banner__subtitle > span {
+  padding-left: 1.2rem;
+  font-size: 3rem;
+}
+
+.description {
+  position: absolute;
+  left: 35rem;
+}
+.description__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #323232;
+}
+
+.about-company {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin-top: -1rem;
+  z-index: 1;
+  background-color: #F2F2F2;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.employees {
+  grid-area: 1/2/2/4;
+  padding: 4rem 0rem;
+}
+.employees__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.employees__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.establishment {
+  grid-area: 1/5/2/8;
+  padding: 4rem 0rem;
+}
+.establishment__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.establishment__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.industry {
+  grid-area: 1/9/2/12;
+  padding: 4rem 0rem;
+}
+.industry__text {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  height: 5rem;
+}
+.industry__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin: 8rem 0rem;
+}
+
+.providers {
+  grid-area: 1/3/2/11;
+}
+.providers__heading {
+  font-family: "Montserrat", sans-serif;
+  color: #323232;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+.providers__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #323232;
+  margin-bottom: 4rem;
+}
+
+.about-ceo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+
+.ceo-image {
+  grid-area: 1/1/2/4;
+}
+
+.ceo-description {
+  grid-area: 1/6/2/12;
+  position: relative;
+}
+.ceo-description__text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #323232;
+  margin-bottom: 5rem;
+}
+.ceo-description__signature {
+  color: #323232;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.ceo-description__signature > span {
+  font-weight: 600;
+}
+.ceo-description__sign {
+  font-family: "Roboto", sans-serif;
+  font-size: 18rem;
+  color: #E92F03;
+  position: absolute;
+  left: 60%;
+  bottom: 25%;
+  transform: rotate(180deg);
+}
+
+.stage {
+  grid-area: 1/3/2/11;
+  margin: 8rem 0rem;
+}
+.stage__heading {
+  color: #323232;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5rem;
+}
+.stage__title {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 5rem;
+}
+.stage__description {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+}
+
+.first-banner {
+  grid-area: 1/1/2/13;
+}
+
+.second-banner {
+  grid-area: 1/1/2/8;
+}
+
+.third-banner {
+  grid-area: 1/8/2/13;
+}
+
+.people-involved {
+  grid-area: 1/9/2/11;
+}
+.people-involved__number {
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  color: #323232;
+  border-bottom: solid 1px #838383;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+.people-involved__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+
+.coffe-cups {
+  grid-area: 1/6/2/8;
+}
+.coffe-cups__number {
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  color: #323232;
+  border-bottom: solid 1px #838383;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+.coffe-cups__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+
+.project-hours {
+  grid-area: 1/3/2/5;
+}
+.project-hours__number {
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  color: #323232;
+  border-bottom: solid 1px #838383;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+.project-hours__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+
+.company-description {
+  grid-area: 1/3/2/11;
+  margin: 8rem 0rem;
+}
+.company-description__text {
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.paralax-box {
+  background-image: url("/assets/paralax.PNG");
+  background-attachment: fixed;
+  height: 45rem;
+  background-repeat: no-repeat;
+}
+
+.bottom-buttons {
+  grid-area: 1/3/2/11;
+}
+.bottom-buttons__button {
+  background: #E92F03;
+  border: solid 0.1rem #E92F03;
+  padding: 0.5rem 0.7rem;
+  color: #fff;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in;
+}
+.bottom-buttons__button:hover {
+  background: transparent;
+  border: solid 0.1rem #E92F03;
+  color: #E92F03;
+}
+
+.breadcrumbs {
+  grid-area: 1/3/2/11;
+}
+.breadcrumbs__links {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=main.css.map */
