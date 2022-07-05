@@ -1,11 +1,15 @@
 .about-company {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 0px;
-    margin-top: -1rem;
-    z-index: 1;
     background-color: $color-white-darker;
-    // position: absolute;
+    @include media (mobile) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+    }
 }

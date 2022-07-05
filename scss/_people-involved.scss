@@ -1,5 +1,11 @@
 .people-involved {
-    grid-area: 1 / 9 / 2 / 11;
+    grid-area: 3 / 2 / 4 / 12;
+    text-align: center;
+
+    @include media (mobile) {
+        grid-area: 1 / 9 / 2 / 11;
+        text-align: left;
+    }
 
     &__number {
         font-family: $font-family-roboto;

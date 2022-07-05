@@ -1,3 +1,9 @@
 .ceo-image {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 12;
+    display: flex;
+    justify-content: center;
+
+    @include media (mobile) {
+        grid-area: 1 / 1 / 2 / 4;
+    }
 }

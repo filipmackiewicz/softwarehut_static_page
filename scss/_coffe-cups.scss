@@ -1,5 +1,11 @@
 .coffe-cups {
-    grid-area: 1 / 6 / 2 / 8;
+    grid-area: 2 / 2 / 3 / 12;
+    text-align: center;
+
+    @include media (mobile) {
+        grid-area: 1 / 6 / 2 / 8;
+        text-align: left;
+    }
 
     &__number {
         font-family: $font-family-roboto;

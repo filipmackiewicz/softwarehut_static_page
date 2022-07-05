@@ -1,6 +1,11 @@
 .description {
     position: absolute;
-    left: 35rem;
+    left: 0;
+    bottom: 2rem;
+
+    @include media (mobile) {
+        left: 35rem;
+    }
 
     &__text {
         font-family: $font-family-montserrat;

@@ -1,5 +1,8 @@
 .ceo-description {
-    grid-area: 1 / 6 / 2 / 12;
+    grid-area: 2 / 2 / 2 / 13;
+    @include media(mobile) {
+        grid-area: 1 / 6 / 2 / 12;
+    }
     position: relative;
 
     &__text {
@@ -8,6 +11,11 @@
         font-size: 2rem;
         color: $color-gray;
         margin-bottom: 5rem;
+        margin-top: 1rem;
+
+        @include media (mobile){
+            margin-top: 0;
+        }
     }
 
     &__signature {

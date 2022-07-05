@@ -9,4 +9,21 @@
         background: $color-white-darker;
         padding: 3rem;
     }
+
+    &--three-col {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+        
+        @include media (mobile) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 0px;
+        }
+    }
 }

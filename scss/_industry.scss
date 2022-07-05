@@ -1,6 +1,12 @@
 .industry {
-    grid-area: 1 / 9 / 2 / 12;
+    grid-area: 3 / 2 / 4 / 12;
     padding: 4rem 0rem;
+    text-align: center;
+
+    @include media (mobile) {
+        grid-area: 1 / 9 / 2 / 12;
+        text-align: left;
+    }
 
     &__text {
         font-size: 1.4rem;

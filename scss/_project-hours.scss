@@ -1,5 +1,11 @@
 .project-hours {
-    grid-area: 1 / 3 / 2 / 5;
+    grid-area: 1 / 2 / 2 / 12;
+    text-align: center;
+
+    @include media (mobile) {
+        grid-area: 1 / 3 / 2 / 5;
+        text-align: left;
+    }
 
     &__number {
         font-family: $font-family-roboto;
