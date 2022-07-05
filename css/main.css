@@ -516,4 +516,103 @@ html {
   padding-top: 1rem;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
+}
+
+.socialicons {
+  display: flex;
+  align-items: center;
+  margin: 8rem 0 8rem 2rem;
+}
+.socialicons__list {
+  list-style-type: none;
+  display: flex;
+}
+.socialicons__list > li {
+  padding: 0rem 0.3rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  background: #323232;
+  border: solid 1px #323232;
+  border-radius: 50%;
+}
+.socialicons__list > li > a > i {
+  color: #fff;
+  padding: 1rem;
+  transition: all 0.2s ease-in;
+}
+.socialicons__list > li > a:hover i {
+  color: #E92F03;
+}
+.socialicons__text {
+  font-size: 1.5rem;
+}
+
+.heading {
+  grid-area: 1/2/2/12;
+  margin-bottom: 8rem;
+}
+.heading__text {
+  color: #323232;
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.image-box {
+  grid-area: 1/2/2/4;
+}
+
+.fast-contact-first {
+  grid-area: 1/5/2/8;
+}
+.fast-contact-first__name {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.fast-contact-first__tel {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+.fast-contact-first__tel:hover {
+  color: #E92F03;
+}
+.fast-contact-first__mail {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  transition: color 0.2s ease-in;
+}
+.fast-contact-first__mail:hover {
+  color: #E92F03;
+}
+
+.fast-contact-second {
+  grid-area: 1/9/2/12;
+}
+.fast-contact-second__text {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.fast-contact-second__text > a {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+.fast-contact-second__text > a:hover {
+  color: #E92F03;
+}
+.fast-contact-second__subtext {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

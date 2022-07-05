@@ -1,0 +1,29 @@
+.fast-contact-second {
+    grid-area: 1 / 9 / 2 / 12;
+
+    &__text {
+        color: $color-gray;
+        font-family: $font-family-roboto;
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+
+        & > a {
+            color: $color-gray;
+            font-family: $font-family-roboto;
+            font-size: 1.8rem;
+            padding-bottom: 2rem;
+            text-decoration: none;
+            transition: color .2s ease-in;
+        }
+        
+        &>a:hover {
+            color: $color-red;
+        }
+    }
+
+    &__subtext {
+        color: $color-gray;
+        font-family: $font-family-roboto;
+        font-size: 1.5rem;
+    }
+}

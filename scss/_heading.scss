@@ -1,0 +1,11 @@
+.heading {
+    grid-area: 1 / 2 / 2 / 12;
+    margin-bottom: 8rem;
+
+    &__text {
+        color: $color-gray;
+        font-size: 6rem;
+        font-family: $font-family-montserrat;
+        font-weight: $font-bold;
+    }
+}

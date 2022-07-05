@@ -1,0 +1,33 @@
+.socialicons {
+    display: flex;
+    align-items: center;
+    margin: 8rem 0 8rem 2rem;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+
+        &>li {
+            padding: 0rem .3rem;
+            margin: 0 .5rem;
+            font-size: 1.5rem;
+            background: $color-gray;
+            border: solid 1px $color-gray;
+            border-radius: 50%;
+
+            &>a>i{
+                color: $color-white;
+                padding: 1rem;
+                transition: all .2s ease-in;
+            }
+
+            &>a:hover i{
+                color: $color-red;
+            }
+        }
+    }
+
+    &__text{
+        font-size: 1.5rem;
+    }
+}

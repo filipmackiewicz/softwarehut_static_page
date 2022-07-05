@@ -1,6 +1,7 @@
 .menu {
     display: flex;
     margin-top: 1rem;
+    
 
     @include media(tablet-small) {
         margin-top: 0;
