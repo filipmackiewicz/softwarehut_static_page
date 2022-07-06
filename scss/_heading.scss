@@ -3,7 +3,7 @@
     margin-bottom: 8rem;
 
     &__text {
-        color: $color-gray;
+        color: var(--text-color);;
         font-size: 6rem;
         font-family: $font-family-montserrat;
         font-weight: $font-bold;

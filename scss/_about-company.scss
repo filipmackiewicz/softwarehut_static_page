@@ -4,7 +4,7 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 0px;
-    background-color: $color-white-darker;
+    background-color: var(--section-bg);
     @include media (mobile) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);

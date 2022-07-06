@@ -9,7 +9,7 @@
         font-family: $font-family-roboto;
         font-style: italic;
         font-size: 2rem;
-        color: $color-gray;
+        color: var(--text-color);
         margin-bottom: 5rem;
         margin-top: 1rem;
 
@@ -19,7 +19,7 @@
     }
 
     &__signature {
-        color: $color-gray;
+        color: var(--text-color);
         font-size: 1.4rem;
         font-family: $font-family-roboto;
         & > span {

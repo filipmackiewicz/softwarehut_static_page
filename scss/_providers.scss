@@ -3,7 +3,7 @@
 
     &__heading {
         font-family: $font-family-montserrat;
-        color: $color-gray;
+        color: var(--text-color);
         font-size: 1.4rem;
         margin-bottom: 4rem;
         
@@ -12,7 +12,7 @@
     &__description {
         font-family: $font-family-roboto;
         font-size: 1.5rem;
-        color: $color-gray;
+        color: var(--text-color);
         margin-bottom: 4rem;
     }
 }

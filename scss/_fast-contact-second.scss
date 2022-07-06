@@ -6,13 +6,13 @@
     }
 
     &__text {
-        color: $color-gray;
+        color: var(--text-color);
         font-family: $font-family-roboto;
         font-size: 1.8rem;
         padding-bottom: 2rem;
 
         & > a {
-            color: $color-gray;
+            color: var(--text-color);
             font-family: $font-family-roboto;
             font-size: 1.8rem;
             padding-bottom: 2rem;
@@ -26,7 +26,7 @@
     }
 
     &__subtext {
-        color: $color-gray;
+        color: var(--text-color);
         font-family: $font-family-roboto;
         font-size: 1.5rem;
     }

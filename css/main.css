@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 html {
@@ -11,17 +12,94 @@ html {
 
 :root {
   font-size: 62.5%;
+  /* Light mode */
+  --light-switch-shadow: #373d4e;
+  --light-switch-icon: "🌚";
+  --light-switch-text: "dark mode?";
+  --light-text: #222430;
+  --light-bg: #fff;
+  --light-theme: #d34a97;
+  --light-section-bg: #F2F2F2;
+  /* Dark mode */
+  --dark-switch-shadow: #fce477;
+  --dark-switch-icon: "🌝";
+  --dark-switch-text: "light mode?";
+  --dark-text: #f7f7f7;
+  --dark-bg: #222430;
+  --dark-theme: #bd93f9;
+  --dark-section-bg: #000;
+  /* Default mode */
+  --switch-shadow-color: var(--light-switch-shadow);
+  --switch-icon: var(--light-switch-icon);
+  --switch-text: var(--light-switch-text);
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+  --theme-color: var(--light-theme);
+  --section-bg: var(--light-section-bg);
 }
 
-main {
-  margin-top: -6px;
-  position: relative;
+#page {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Switched mode */
+.theme-switch:checked ~ #page {
+  --switch-shadow-color: var(--dark-switch-shadow);
+  --switch-icon: var(--dark-switch-icon);
+  --switch-text: var(--dark-switch-text);
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+  --theme-color: var(--dark-theme);
+  --section-bg: var(--dark-section-bg);
+}
+
+/* Theme switcher */
+.theme-switch {
+  /* Hides the checkbox */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+  cursor: pointer;
+  display: flex;
+}
+
+.switch-label::before {
+  content: var(--switch-icon);
+  font-size: 2rem;
+  transition: text-shadow 0.2s;
+}
+
+.switch-label::after {
+  align-self: center;
+  content: var(--switch-text);
+  color: var(--switch-shadow-color);
+  font-size: 2rem;
+  line-height: 40px;
+  opacity: 0;
+  padding-left: 15px;
+  transition: opacity 0.2s;
+  display: none;
+}
+
+.theme-switch:focus ~ #page .switch-label::before,
+.switch-label:hover::before {
+  text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+
+.theme-switch:focus ~ #page .switch-label::after,
+.switch-label:hover::after {
+  opacity: 1;
 }
 
 .page-container {
   margin: 0 auto;
   max-width: 1921px;
-  background-color: #fff;
   overflow: hidden;
 }
 
@@ -33,7 +111,7 @@ main {
   grid-row-gap: 0px;
 }
 .wrapper--bg {
-  background: #F2F2F2;
+  background-color: var(--section-bg);
   padding: 3rem;
 }
 .wrapper--three-col {
@@ -194,7 +272,7 @@ main {
 .description__text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
-  color: #323232;
+  color: var(--text-color);
 }
 
 .about-company {
@@ -203,7 +281,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 0px;
-  background-color: #F2F2F2;
+  background-color: var(--section-bg);
 }
 @media (min-width: 768px) {
   .about-company {
@@ -301,14 +379,14 @@ main {
 }
 .providers__heading {
   font-family: "Montserrat", sans-serif;
-  color: #323232;
+  color: var(--text-color);
   font-size: 1.4rem;
   margin-bottom: 4rem;
 }
 .providers__description {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  color: #323232;
+  color: var(--text-color);
   margin-bottom: 4rem;
 }
 
@@ -353,7 +431,7 @@ main {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 2rem;
-  color: #323232;
+  color: var(--text-color);
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
@@ -363,7 +441,7 @@ main {
   }
 }
 .ceo-description__signature {
-  color: #323232;
+  color: var(--text-color);
   font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
 }
@@ -391,13 +469,13 @@ main {
   margin: 8rem 0rem;
 }
 .stage__heading {
-  color: #323232;
+  color: var(--text-color);
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 5rem;
 }
 .stage__title {
-  color: #323232;
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 2.8rem;
   margin-bottom: 5rem;
@@ -405,7 +483,7 @@ main {
 .stage__description {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  color: #323232;
+  color: var(--text-color);
 }
 
 .first-banner {
@@ -433,8 +511,8 @@ main {
 .people-involved__number {
   font-family: "Roboto", sans-serif;
   font-size: 10rem;
-  color: #323232;
-  border-bottom: solid 1px #838383;
+  color: var(--text-color);
+  border-bottom: solid 1px var(--text-color);
   padding-bottom: 2rem;
   font-weight: 100;
 }
@@ -457,8 +535,8 @@ main {
 .coffe-cups__number {
   font-family: "Roboto", sans-serif;
   font-size: 10rem;
-  color: #323232;
-  border-bottom: solid 1px #838383;
+  color: var(--text-color);
+  color: var(--text-color);
   padding-bottom: 2rem;
   font-weight: 100;
 }
@@ -481,8 +559,8 @@ main {
 .project-hours__number {
   font-family: "Roboto", sans-serif;
   font-size: 10rem;
-  color: #323232;
-  border-bottom: solid 1px #838383;
+  color: var(--text-color);
+  border-bottom: solid 1px var(--text-color);
   padding-bottom: 2rem;
   font-weight: 100;
 }
@@ -497,7 +575,7 @@ main {
   margin: 8rem 0rem;
 }
 .company-description__text {
-  color: #323232;
+  color: var(--text-color);
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
@@ -552,8 +630,8 @@ main {
   padding: 0rem 0.3rem;
   margin: 0 0.5rem;
   font-size: 1.5rem;
-  background: #323232;
-  border: solid 1px #323232;
+  background: var(--text-color);
+  border: solid 1px var(--text-color);
   border-radius: 50%;
 }
 .socialicons__list > li > a > i {
@@ -573,7 +651,7 @@ main {
   margin-bottom: 8rem;
 }
 .heading__text {
-  color: #323232;
+  color: var(--text-color);
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -601,7 +679,7 @@ main {
   }
 }
 .fast-contact-first__name {
-  color: #323232;
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   padding-bottom: 2rem;
@@ -609,7 +687,7 @@ main {
 .fast-contact-first__tel {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  color: #323232;
+  color: var(--text-color);
   text-decoration: none;
   transition: color 0.2s ease-in;
 }
@@ -619,7 +697,7 @@ main {
 .fast-contact-first__mail {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  color: #323232;
+  color: var(--text-color);
   transition: color 0.2s ease-in;
 }
 .fast-contact-first__mail:hover {
@@ -635,13 +713,13 @@ main {
   }
 }
 .fast-contact-second__text {
-  color: #323232;
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   padding-bottom: 2rem;
 }
 .fast-contact-second__text > a {
-  color: #323232;
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   padding-bottom: 2rem;
@@ -652,13 +730,13 @@ main {
   color: #E92F03;
 }
 .fast-contact-second__subtext {
-  color: #323232;
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
 
 .footer {
-  background-color: #323232;
+  background-color: #454545;
 }
 
 .footer-col {
@@ -686,13 +764,13 @@ main {
 .footer-explore__heading {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: var(--text-color);
   padding-bottom: 1.5rem;
 }
 .footer-explore__text {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: var(--text-color);
   padding-bottom: 1rem;
 }
 
@@ -784,7 +862,7 @@ main {
 .footer-blog__heading {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: var(--text-color);
   padding-bottom: 3rem;
 }
 .footer-blog__entries {
@@ -801,13 +879,13 @@ main {
   transition: all 0.3s ease-in;
 }
 .footer-blog__entries > li > a:hover {
-  color: #838383;
+  color: var(--text-color);
 }
 
 .footer-legal__heading {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: var(--text-color);
   padding-bottom: 3rem;
 }
 .footer-legal__text {
@@ -841,5 +919,5 @@ main {
 .copyright__text {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  color: #838383;
+  color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */
