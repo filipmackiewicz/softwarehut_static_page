@@ -17,6 +17,7 @@
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 5px;
         grid-row-gap: 0px;
+        text-align: center;
         
         @include media (mobile) {
             display: grid;
@@ -24,6 +25,7 @@
             grid-template-rows: 1fr;
             grid-column-gap: 5px;
             grid-row-gap: 0px;
+            text-align: left;
         }
     }
 }

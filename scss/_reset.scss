@@ -1,14 +1,14 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
   /* Light mode */
   --light-switch-shadow: #373d4e;
   --light-switch-icon: "🌚";
@@ -17,6 +17,8 @@ html {
   --light-bg: #fff;
   --light-theme: #d34a97;
   --light-section-bg: #F2F2F2;
+  --light-section-header: #FFA500;
+  --light-nordic: #FFF300;
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
@@ -26,6 +28,8 @@ html {
   --dark-bg: #222430;
   --dark-theme: #bd93f9;
   --dark-section-bg: #000;
+  --dark-section-header: #4a330a;
+  --dark-nordic: #6a6617;
 
   /* Default mode */
   --switch-shadow-color: var(--light-switch-shadow);
@@ -35,62 +39,6 @@ html {
   --bg-color: var(--light-bg);
   --theme-color: var(--light-theme);
   --section-bg: var(--light-section-bg);
+  --section-header: var(--light-section-header);
+  --section-nordic: var(--light-nordic);
 }
-
-#page {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-/* Switched mode */
-.theme-switch:checked ~ #page {
-    --switch-shadow-color: var(--dark-switch-shadow);
-    --switch-icon: var(--dark-switch-icon);
-    --switch-text: var(--dark-switch-text);
-    --text-color: var(--dark-text);
-    --bg-color: var(--dark-bg);
-    --theme-color: var(--dark-theme);
-    --section-bg: var(--dark-section-bg);
-  }
-  
-  /* Theme switcher */
-  .theme-switch { /* Hides the checkbox */
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  
-  .switch-label {
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .switch-label::before {
-    content: var(--switch-icon);
-    font-size: 2rem;
-    transition: text-shadow .2s;
-  }
-  
-  .switch-label::after {
-    align-self: center;
-    content: var(--switch-text);
-    color: var(--switch-shadow-color);
-    font-size: 2rem;
-    line-height: 40px;
-    opacity: 0;
-    padding-left: 15px;
-    transition: opacity .2s;
-    display: none;
-  }
-  
-  .theme-switch:focus ~ #page .switch-label::before,
-  .switch-label:hover::before {
-    text-shadow: 0 0 15px var(--switch-shadow-color);
-  }
-  
-  .theme-switch:focus ~ #page .switch-label::after,
-  .switch-label:hover::after {
-    opacity: 1;
-  }
