@@ -13,6 +13,11 @@ html {
   font-size: 10px;
 }
 
+main {
+  margin-top: -6px;
+  position: relative;
+}
+
 .page-container {
   margin: 0 auto;
   max-width: 1921px;
@@ -53,7 +58,7 @@ html {
   background-image: url("/assets/bg.jpg");
   height: 50rem;
   position: relative;
-  z-index: 0;
+  z-index: 2;
 }
 
 .navigation {
@@ -61,6 +66,12 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: url("/assets/bg.jpg");
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 2rem;
 }
 @media (min-width: 880px) {
   .navigation {
@@ -108,6 +119,10 @@ html {
   border-bottom: dashed 1px #000;
   padding-bottom: 0.2rem;
   font-weight: 800;
+}
+.menu__link > i {
+  padding-left: 0.5rem;
+  color: #E92F03;
 }
 .menu__button {
   background: #E92F03;
