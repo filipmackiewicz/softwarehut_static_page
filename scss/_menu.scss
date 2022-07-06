@@ -1,17 +1,25 @@
 .menu {
     display: flex;
     margin-top: 1rem;
+    flex-direction: column;
+
+    @include media (mobile-small) {
+        flex-direction: row;
+    }
     
 
     @include media(tablet-small) {
         margin-top: 0;
     }
 
+
     &__list {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         align-items: center;
+
+
     }
 
     &__link {
@@ -22,8 +30,14 @@
         color: $color-black;
         text-decoration: none;
         transition: all .2s ease-in;
+        padding: .5rem 0;
 
         @include media (mobile-small) {
+            font-size: 1rem;
+            margin: 1rem 1rem;
+        }
+
+        @include media (mobile) {
             font-size: 1.5rem;
             margin: 1rem 1rem;
         }

@@ -28,7 +28,6 @@ html {
   --dark-switch-text: "light mode?";
   --dark-text: #f7f7f7;
   --dark-bg: #222430;
-  --dark-theme: #bd93f9;
   --dark-section-bg: #000;
   --dark-section-header: #4a330a;
   --dark-nordic: #6a6617;
@@ -116,6 +115,12 @@ html {
 .menu {
   display: flex;
   margin-top: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 420px) {
+  .menu {
+    flex-direction: row;
+  }
 }
 @media (min-width: 880px) {
   .menu {
@@ -136,8 +141,15 @@ html {
   color: #000;
   text-decoration: none;
   transition: all 0.2s ease-in;
+  padding: 0.5rem 0;
 }
 @media (min-width: 420px) {
+  .menu__link {
+    font-size: 1rem;
+    margin: 1rem 1rem;
+  }
+}
+@media (min-width: 768px) {
   .menu__link {
     font-size: 1.5rem;
     margin: 1rem 1rem;
@@ -442,12 +454,22 @@ html {
   color: var(--text-color);
 }
 
-.first-banner {
-  grid-area: 1/1/2/13;
+.first-banner > img {
+  width: 100%;
 }
 
 .second-banner {
-  grid-area: 1/1/2/8;
+  display: flex;
+  flex-direction: column;
+}
+.second-banner > img {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+@media (min-width: 1024px) {
+  .second-banner {
+    flex-direction: row;
+  }
 }
 
 .third-banner {
@@ -492,9 +514,9 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 10rem;
   color: var(--text-color);
-  color: var(--text-color);
   padding-bottom: 2rem;
   font-weight: 100;
+  border-bottom: solid 1px var(--text-color);
 }
 .coffe-cups__description {
   font-family: "Montserrat", sans-serif;
@@ -767,10 +789,15 @@ html {
 }
 
 .footer-newsletter-form__input {
-  padding: 1.5rem 13rem 1.5rem 1rem;
+  padding: 1.5rem 0rem 1.5rem 1rem;
   background: transparent;
   border: solid 0.1rem #838383;
   color: #838383;
+}
+@media (min-width: 420px) {
+  .footer-newsletter-form__input {
+    padding: 1.5rem 13rem 1.5rem 1rem;
+  }
 }
 .footer-newsletter-form__input:focus {
   outline: none;

@@ -1,3 +1,5 @@
 .first-banner {
-    grid-area: 1 / 1 / 2 / 13;
+    &>img {
+        width: 100%;
+    }
 }
