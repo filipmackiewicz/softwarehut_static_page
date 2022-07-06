@@ -25,15 +25,24 @@
         & > span {
             font-weight: $font-bold;
         }
+
+
     }
 
     &__sign {
-        font-family: $font-family-roboto;
-        font-size: 18rem;
-        color: $color-red;
-        position: absolute;
-        left: 60%;
-        bottom: 25%;
-        transform: rotate(180deg);
+        display: none;
+
+        @include media (mobile-small) {
+            display: block;
+            font-family: $font-family-roboto;
+            font-size: 18rem;
+            color: $color-red;
+            position: absolute;
+            left: 60%;
+            bottom: 25%;
+            transform: rotate(180deg);
+        }
     }
+
+    
 }
