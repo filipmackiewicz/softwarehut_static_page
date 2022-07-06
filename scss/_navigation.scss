@@ -3,6 +3,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-image: url("/assets/bg.jpg");
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 2rem;
 
     @include media(tablet-small) {
         display: flex;
