@@ -109,6 +109,10 @@ html {
   padding-bottom: 0.2rem;
   font-weight: 800;
 }
+.menu__link > i {
+  padding-left: 0.5rem;
+  color: #E92F03;
+}
 .menu__button {
   background: #E92F03;
   border: solid 1px #E92F03;
