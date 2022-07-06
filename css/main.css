@@ -537,7 +537,7 @@ html {
 }
 
 .paralax-box {
-  background-image: url("/assets/paralax.PNG");
+  background-image: url("./assets/paralax.png");
   background-attachment: fixed;
   min-height: 45rem;
   background-position: center;
