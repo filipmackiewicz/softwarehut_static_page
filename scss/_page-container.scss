@@ -1,10 +1,11 @@
 .page-container {
-    margin: 0 auto;
-    max-width: 1921px;
     overflow: hidden;
+
+    max-width: 1921px;
+    margin: 0 auto;
 }
 
 #page {
-    background: var(--bg-color);
     color: var(--text-color);
+    background: var(--bg-color);
 }

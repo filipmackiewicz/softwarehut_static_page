@@ -1,11 +1,13 @@
 .heading {
-    grid-area: 1 / 2 / 2 / 12;
     margin-bottom: 8rem;
 
+    grid-area: 1 / 2 / 2 / 12;
+
     &__text {
-        color: var(--text-color);;
-        font-size: 6rem;
         font-family: $font-family-montserrat;
+        font-size: 6rem;
         font-weight: $font-bold;
+
+        color: var(--text-color);;
     }
 }

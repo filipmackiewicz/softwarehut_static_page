@@ -1,47 +1,50 @@
 .banner {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 0rem;
     flex-direction: column;
     align-items: center;
-    margin-top: 12rem;
+    justify-content: space-around;
 
+    margin-top: 12rem;
+    padding: 1rem 0rem;
     @include media (mobile) {
         display: flex;
-        justify-content: space-around;
-        padding: 15rem 0rem;
         flex-direction: row;
+        justify-content: space-around;
+
         margin-top: 0;
+        padding: 15rem 0rem;
     }
 
     &__title {
-        font-family: $font-family-montserrat;
-        font-weight: $font-bold;
-        font-size: 3rem;
-        text-align: center;
         margin-bottom: 1rem;
 
-        @include media (tablet-small) {
+        font-family: $font-family-montserrat;
+        font-size: 3rem;
+        font-weight: $font-bold;
+
+        text-align: center;
+    @include media (tablet-small) {
             font-size: 5rem;
         }
 
-        
     @include media (mobile) {
-        text-align: left;
-        margin: 0;
-    }
+            margin: 0;
 
-        
+            text-align: left;
+        }
     }
 
     &__subtitle {
-        background-color: var(--section-nordic);
-        padding: 2rem;
-        font-size: 3rem;
         width: 8.5rem;
+        padding: 2rem;
 
-        &>span {
+        font-size: 3rem;
+
+        background-color: var(--section-nordic);
+
+        & > span {
             padding-left: 1.2rem;
+
             font-size: 3rem;
         }
     }

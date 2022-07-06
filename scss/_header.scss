@@ -1,8 +1,10 @@
 .header {
-    padding: 3rem;
-    // background-image: url("assets/bg.jpg");
-    background: var(--section-header);
-    height: 50rem;
     position: relative;
     z-index: 2;
+
+    height: 50rem;
+    padding: 3rem;
+
+
+    background: var(--section-header);
 }

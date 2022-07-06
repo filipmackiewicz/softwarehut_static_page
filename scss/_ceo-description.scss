@@ -1,48 +1,51 @@
 .ceo-description {
-    grid-area: 2 / 2 / 2 / 13;
+    position: relative;
+
     @include media(mobile) {
         grid-area: 1 / 6 / 2 / 12;
     }
-    position: relative;
 
+    grid-area: 2 / 2 / 2 / 13;
     &__text {
-        font-family: $font-family-roboto;
-        font-style: italic;
-        font-size: 2rem;
-        color: var(--text-color);
-        margin-bottom: 5rem;
         margin-top: 1rem;
+        margin-bottom: 5rem;
 
-        @include media (mobile){
+        font-family: $font-family-roboto;
+        font-size: 2rem;
+        font-style: italic;
+
+        color: var(--text-color);
+    @include media (mobile) {
             margin-top: 0;
         }
     }
 
     &__signature {
-        color: var(--text-color);
-        font-size: 1.4rem;
         font-family: $font-family-roboto;
+        font-size: 1.4rem;
+
+        color: var(--text-color);
         & > span {
             font-weight: $font-bold;
         }
-
-
     }
 
     &__sign {
         display: none;
 
-        @include media (mobile-small) {
+    @include media (mobile-small) {
+            position: absolute;
+            bottom: 25%;
+            left: 60%;
+
             display: block;
+
             font-family: $font-family-roboto;
             font-size: 18rem;
-            color: $color-red;
-            position: absolute;
-            left: 60%;
-            bottom: 25%;
+
             transform: rotate(180deg);
+
+            color: $color-red;
         }
     }
-
-    
 }

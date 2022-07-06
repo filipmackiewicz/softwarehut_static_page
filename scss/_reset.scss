@@ -1,43 +1,42 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-  font-size: 62.5%;
-  /* Light mode */
-  --light-switch-shadow: #373d4e;
-  --light-switch-icon: "🌚";
-  --light-switch-text: "dark mode?";
-  --light-text: #222430;
-  --light-bg: #fff;
-  --light-theme: #d34a97;
-  --light-section-bg: #F2F2F2;
-  --light-section-header: #FFA500;
-  --light-nordic: #FFF300;
+    font-size: 62.5%;
 
-  /* Dark mode */
-  --dark-switch-shadow: #fce477;
-  --dark-switch-icon: "🌝";
-  --dark-switch-text: "light mode?";
-  --dark-text: #f7f7f7;
-  --dark-bg: #222430;
-  --dark-section-bg: #000;
-  --dark-section-header: #4a330a;
-  --dark-nordic: #6a6617;
-
-  /* Default mode */
-  --switch-shadow-color: var(--light-switch-shadow);
-  --switch-icon: var(--light-switch-icon);
-  --switch-text: var(--light-switch-text);
-  --text-color: var(--light-text);
-  --bg-color: var(--light-bg);
-  --theme-color: var(--light-theme);
-  --section-bg: var(--light-section-bg);
-  --section-header: var(--light-section-header);
-  --section-nordic: var(--light-nordic);
+    --bg-color: var(--light-bg);
+    --dark-bg: #222430;
+    --dark-nordic: #6a6617;
+    --dark-section-bg: #000;
+    --dark-section-header: #4a330a;
+    --dark-switch-icon: '🌝';
+/* Dark mode */
+    --dark-switch-shadow: #fce477;
+    --dark-switch-text: 'light mode?';
+    --dark-text: #f7f7f7;
+    --light-bg: #fff;
+    --light-nordic: #fff300;
+    --light-section-bg: #f2f2f2;
+    --light-section-header: #ffa500;
+    --light-switch-icon: '🌚';
+/* Light mode */
+    --light-switch-shadow: #373d4e;
+    --light-switch-text: 'dark mode?';
+    --light-text: #222430;
+    --light-theme: #d34a97;
+    --section-bg: var(--light-section-bg);
+    --section-header: var(--light-section-header);
+    --section-nordic: var(--light-nordic);
+    --switch-icon: var(--light-switch-icon);
+/* Default mode */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-text: var(--light-switch-text);
+    --text-color: var(--light-text);
+    --theme-color: var(--light-theme);
 }

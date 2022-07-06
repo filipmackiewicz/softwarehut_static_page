@@ -1,8 +1,9 @@
 .paralax-box {
-    background-image: url('../assets/paralax.png');
-    background-attachment: fixed;
     min-height: 45rem;
-    background-position: center;
+
+    background-image: url('../assets/paralax.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }

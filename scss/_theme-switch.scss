@@ -1,37 +1,41 @@
 .theme-switch:checked ~ #page {
-    --switch-shadow-color: var(--dark-switch-shadow);
-    --switch-icon: var(--dark-switch-icon);
-    --switch-text: var(--dark-switch-text);
-    --text-color: var(--dark-text);
     --bg-color: var(--dark-bg);
-    --theme-color: var(--dark-theme);
     --section-bg: var(--dark-section-bg);
     --section-header: var(--dark-section-header);
     --section-nordic: var(--dark-nordic);
-  }
-  
-  /* Theme switcher */
-  .theme-switch { /* Hides the checkbox */
+    --switch-icon: var(--dark-switch-icon);
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-text: var(--dark-switch-text);
+    --text-color: var(--dark-text);
+    --theme-color: var(--dark-theme);
+}
+
+.theme-switch {
     position: absolute !important;
-    height: 1px;
-    width: 1px;
+
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-  }
-  
-  .switch-label {
-    cursor: pointer;
+
+    width: 1px;
+    height: 1px;
+}
+
+.switch-label {
     display: flex;
+
     padding: 1rem 0rem;
-  }
-  
-  .switch-label::before {
-    content: var(--switch-icon);
+
+    cursor: pointer;
+}
+
+.switch-label::before {
     font-size: 2rem;
+
+    content: var(--switch-icon);
     transition: text-shadow .2s;
-  }
-  
-  .theme-switch:focus ~ #page .switch-label::before,
-  .switch-label:hover::before {
+}
+
+.theme-switch:focus ~ #page .switch-label::before,
+.switch-label:hover::before {
     text-shadow: 0 0 15px var(--switch-shadow-color);
-  }
+}

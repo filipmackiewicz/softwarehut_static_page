@@ -1,20 +1,23 @@
 .footer-socials {
     padding: 3rem 0rem;
     &__list {
-        list-style-type: none;
         display: flex;
 
-        &>li>a {
+        list-style-type: none;
+
+        & > li > a {
             padding: 0 .5rem;
 
-            &>i {
-                color: $color-gray-lighter;
+            & > i {
                 font-size: 2em;
+
                 transition: all .3s ease-in;
+
+                color: $color-gray-lighter;
             }
         }
 
-        &>li>a:hover i {
+        & > li > a:hover i {
             color: $color-red;
         }
     }

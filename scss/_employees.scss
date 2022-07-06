@@ -1,22 +1,26 @@
 .employees {
-    grid-area: 1 / 2 / 2 / 12;
     padding: 4rem 0rem;
+
     text-align: center;
 
     @include media (mobile) {
-        grid-area: 1 / 2 / 2 / 4;
         text-align: left;
+
+        grid-area: 1 / 2 / 2 / 4;
     }
 
+    grid-area: 1 / 2 / 2 / 12;
+
     &__text {
-        font-size: 1.4rem;
-        font-family: $font-family-montserrat;
         height: 5rem;
+
+        font-family: $font-family-montserrat;
+        font-size: 1.4rem;
     }
 
     &__number {
         font-family: $font-family-montserrat;
-        font-weight: $font-semi-bold;
         font-size: 3.2rem;
+        font-weight: $font-semi-bold;
     }
 }

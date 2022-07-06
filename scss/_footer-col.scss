@@ -1,12 +1,13 @@
 .footer-col {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
+
     padding-top: 6rem;
 
     @include media (mobile) {
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
+        justify-content: space-between;
     }
 }

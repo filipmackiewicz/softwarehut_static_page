@@ -1,24 +1,29 @@
 .people-involved {
-    grid-area: 3 / 2 / 4 / 12;
     text-align: center;
 
     @include media (mobile) {
-        grid-area: 1 / 9 / 2 / 11;
         text-align: left;
+
+        grid-area: 1 / 9 / 2 / 11;
     }
 
+    grid-area: 3 / 2 / 4 / 12;
+
     &__number {
+        padding-bottom: 2rem;
+
         font-family: $font-family-roboto;
         font-size: 10rem;
-        color: var(--text-color);;
-        border-bottom: solid 1px var(--text-color);
-        padding-bottom: 2rem;
         font-weight: $font-thin;
+
+        color: var(--text-color);
+        border-bottom: solid 1px var(--text-color);;
     }
 
     &__description {
+        padding-top: 2rem;
+
         font-family: $font-family-montserrat;
         font-size: 1.4rem;
-        padding-top: 2rem;
     }
 }

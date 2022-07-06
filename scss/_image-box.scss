@@ -1,7 +1,7 @@
-.image-box{
-    grid-area: 1 / 2 / 2 / 12;
-
+.image-box {
     @include media (mobile) {
         grid-area: 1 / 2 / 2 / 4;
     }
+
+    grid-area: 1 / 2 / 2 / 12;
 }

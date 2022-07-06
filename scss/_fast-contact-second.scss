@@ -1,33 +1,39 @@
 .fast-contact-second {
-    grid-area: 3 / 2 / 4 / 12;
-
     @include media (mobile) {
         grid-area: 1 / 9 / 2 / 12;
     }
 
+    grid-area: 3 / 2 / 4 / 12;
+
     &__text {
-        color: var(--text-color);
-        font-family: $font-family-roboto;
-        font-size: 1.8rem;
         padding-bottom: 2rem;
 
+        font-family: $font-family-roboto;
+        font-size: 1.8rem;
+
+        color: var(--text-color);
+
         & > a {
-            color: var(--text-color);
+            padding-bottom: 2rem;
+
             font-family: $font-family-roboto;
             font-size: 1.8rem;
-            padding-bottom: 2rem;
-            text-decoration: none;
+
             transition: color .2s ease-in;
+            text-decoration: none;
+
+            color: var(--text-color);
         }
-        
-        &>a:hover {
+
+        & > a:hover {
             color: $color-red;
         }
     }
 
     &__subtext {
-        color: var(--text-color);
         font-family: $font-family-roboto;
         font-size: 1.5rem;
+
+        color: var(--text-color);
     }
 }

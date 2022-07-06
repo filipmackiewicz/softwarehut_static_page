@@ -1,24 +1,29 @@
 .coffe-cups {
-    grid-area: 2 / 2 / 3 / 12;
     text-align: center;
 
     @include media (mobile) {
-        grid-area: 1 / 6 / 2 / 8;
         text-align: left;
+
+        grid-area: 1 / 6 / 2 / 8;
     }
 
+    grid-area: 2 / 2 / 3 / 12;
+
     &__number {
+        padding-bottom: 2rem;
+
         font-family: $font-family-roboto;
         font-size: 10rem;
-        color: var(--text-color);
-        padding-bottom: 2rem;
         font-weight: $font-thin;
+
+        color: var(--text-color);
         border-bottom: solid 1px var(--text-color);
     }
 
     &__description {
+        padding-top: 2rem;
+
         font-family: $font-family-montserrat;
         font-size: 1.4rem;
-        padding-top: 2rem;
     }
 }

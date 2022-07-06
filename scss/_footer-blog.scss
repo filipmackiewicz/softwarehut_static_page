@@ -1,28 +1,32 @@
 .footer-blog {
     padding: 5rem 0rem;
     &__heading {
-        font-size: 4rem;
-        font-family: $font-family-montserrat;
-        color: $color-gray-lighter;
         padding-bottom: 3rem;
+
+        font-family: $font-family-montserrat;
+        font-size: 4rem;
+
+        color: $color-gray-lighter;
     }
 
     &__entries {
         list-style-type: none;
 
-        &>li {
+        & > li {
             padding: .7rem 0rem;
         }
 
-        &>li>a {
-            color: $color-white;
-            font-weight: $font-bold;
+        & > li > a {
             font-size: 1.5rem;
-            text-decoration: none;
+            font-weight: $font-bold;
+
             transition: all .3s ease-in;
+            text-decoration: none;
+
+            color: $color-white;
         }
 
-        &>li>a:hover {
+        & > li > a:hover {
             color: var(--text-color);
         }
     }

@@ -1,8 +1,7 @@
 .description {
     position: absolute;
-    left: 0;
     bottom: 2rem;
-
+    left: 0;
     @include media (mobile) {
         left: 35rem;
     }
@@ -10,6 +9,7 @@
     &__text {
         font-family: $font-family-montserrat;
         font-size: 1.4rem;
+
         color: var(--text-color);
     }
 }
