@@ -61,6 +61,11 @@
             padding-left: .5rem;
 
             color: $color-red;
+            display: none;
+
+            @include media (mobile) {
+                display: initial;
+            }
         }
     }
 

@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-around;
 
-    margin-top: 12rem;
+    margin-top: 13rem;
+    margin-bottom: 0rem;
     padding: 1rem 0rem;
     @include media (mobile) {
         display: flex;
@@ -13,6 +14,7 @@
 
         margin-top: 0;
         padding: 15rem 0rem;
+        margin-bottom: 3rem;
     }
 
     &__title {
