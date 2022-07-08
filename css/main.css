@@ -105,6 +105,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  z-index: 10;
   background: var(--section-header);
 }
 @media (min-width: 880px) {
@@ -390,12 +391,38 @@ main {
 .ceo-image {
   display: flex;
   justify-content: center;
+  position: relative;
   grid-area: 1/2/2/12;
 }
 @media (min-width: 768px) {
   .ceo-image {
     grid-area: 1/1/2/4;
   }
+}
+.ceo-image > img {
+  transition: all 0.3s ease-in;
+}
+.ceo-image:hover img {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.ceo-image::before {
+  content: "Linus Kaasik";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 3;
+  transition: visibility 0.3s ease-in;
+}
+.ceo-image:hover::before {
+  visibility: visible;
 }
 
 .ceo-description {
